@@ -1,9 +1,9 @@
 
-const GoPage = (props) => {
+const GoPage = (props: any) => {
   return <pre>{JSON.stringify(props, null, 2)}</pre>
 }
 
-export const getServerSideProps = async (context) => {
+export const getServerSideProps = async (context: any) => {
   console.log('aaaa ',context.params.slug)
 
 
