@@ -4,8 +4,6 @@ const GoPage = (props: any) => {
 }
 
 export const getServerSideProps = async (context: any) => {
-  console.log('aaaa ',context.params.slug)
-
 
   return {
     props:{
