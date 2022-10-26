@@ -18,7 +18,7 @@ export function middleware(req: NextRequest, ev: NextFetchEvent){
     
   }
 
-  if(hostname==='localhost' || hostname === 'ouvimais.tech'){
+  if(hostname==='localhost' || hostname === 'www.ouvimais.tech'){
     slug = 'meutenant'
   }
   console.log('/'+slug+pathname);
