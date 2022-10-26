@@ -12,13 +12,13 @@ export function middleware(req: NextRequest, ev: NextFetchEvent){
   
 
   let slug = hostname
-  if(hostname.indexOf('.reciclaseletiva.com.br') >= 0 || hostname.indexOf('.local') >=0){
+  if(hostname.indexOf('.ouvimais.tech') >= 0 || hostname.indexOf('.local') >=0){
     slug = hostname.split('.')[0]
     console.log({slug});
     
   }
 
-  if(hostname==='localhost'){
+  if(hostname==='localhost' || hostname === 'ouvimais.tech'){
     slug = 'meutenant'
   }
   console.log('/'+slug+pathname);
